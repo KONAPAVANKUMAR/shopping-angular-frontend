@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { cartItems } from '../cart';
 import { Products } from '../products'
 import { Product } from '../productsmodel';
-import { balance } from '../user';
+import { User } from '../user';
 
 @Component({
   selector: 'app-products',
@@ -16,7 +16,7 @@ export class ProductsComponent implements OnInit {
   
 
 
-  balance = balance;
+  balance = User.balance;
 
   cartItemsCount = 0;
 

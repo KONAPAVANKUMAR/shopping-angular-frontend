@@ -13,8 +13,27 @@
 <div *ngIf="orders.length==0" class="container text-center">
     <h1>No Orders Placed :(</h1>
 </div>
-<div class="container" style="width: 30vw;margin-top: 2vw;">
-    <h1 *ngIf="orders.length!=0" style="text-align: center;">Your Orders</h1>
+<div *ngFor="let order of orders"  class="container" style="width: 30vw;margin-top: 2vw;">
+
+    <table  class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+            
+          </tr>
+        </thead>
+        <tbody *ngFor="let product of order.products">
+          <tr>
+
+
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+          </tr>
+        </tbody>
+    </table>
+    
+    <!-- <h1 *ngIf="orders.length!=0" style="text-align: center;">Your Orders</h1>
     <ul>
         <ul style="margin-bottom: 2vw;" *ngFor="let order of orders" class="list-group">
             <li class="list-group-item">
@@ -26,15 +45,15 @@
                     
                 </div>
             </li>
-            
+             -->
 
             
             <!-- <div class="d-flex">
                 
                 <a (click)="deleteItem(cartItem)" class="badge badge-pill badge-danger">delete</a>
             </div> -->
-        </ul>
-    </ul>    
+        <!-- </ul>
+    </ul>     -->
 
 </div>
 

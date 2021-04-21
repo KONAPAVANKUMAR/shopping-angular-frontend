@@ -1,8 +1,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <div class="container">
-        <a href="#" class="navbar-brand">Shop Here</a>
-        <h4 class="nav-item ml-auto">Wallet : {{balance}}</h4>
+        <a [routerLink]="['']" class="navbar-brand">Shop Here</a>
+        <h4 style="margin-right: 1vw;" class="nav-item ml-auto">Wallet : {{balance}}</h4>
+        <a [routerLink]="['/order-component']" class="nav-item btn btn-warning text-dark">orders</a>
     </div>
 </nav>
 <div class="container" style="width: 30vw;margin-top: 2vw;">

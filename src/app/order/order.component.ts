@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { orders } from '../orders';
-import { balance } from '../user';
+import { User } from '../user';
 
 @Component({
   selector: 'app-order',
@@ -11,7 +11,7 @@ import { balance } from '../user';
 export class OrderComponent implements OnInit {
 
   orders = orders;
-  balance = balance;
+  balance = User.balance;
 
   constructor() { }
 

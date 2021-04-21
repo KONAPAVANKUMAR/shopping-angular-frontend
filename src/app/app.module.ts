@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
 import { OrderComponent } from './order/order.component';
+import { InsufficientfundsComponent } from './insufficientfunds/insufficientfunds.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     CartComponent,
-    OrderComponent
+    OrderComponent,
+    InsufficientfundsComponent
   ],
   imports: [
     BrowserModule,

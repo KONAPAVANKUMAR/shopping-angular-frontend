@@ -1,1 +1,4 @@
-export var balance = 2000;
+
+export class User{
+    static balance : number = 50;
+}
